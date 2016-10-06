@@ -1,48 +1,71 @@
 using System;
 
-namespace ConsoleApplication
+namespace Zoolandia
 {
-    class Animal
-{
-    //PROPERTIES to Animal follows://
-    public string name { get; set; }
-    public double height { get; set; }
-    public double weight { get; set; }
-    public string color { get; set; }
-
-//METHODS on Animal follows://
-    public static void sleep ()
+    public class Animal
     {
-        Console.WriteLine("Animal is now sleeping");
+        //PROPERTIES to Animal follows://
+        public string Name { get; set; }
+        public double Height { get; set; }
+        public double Weight { get; set; }
+        public string Color { get; set; }
+
+    //METHODS on Animal follows://
+        public static void sleep ()
+        {
+            Console.WriteLine("Animal is now sleeping");
+        }
+        public static void eat ()
+        {
+            Console.WriteLine("Animal is now eating");
+        }
+        public static void move ()
+        {
+            Console.WriteLine("Animal is now moving");
+        }
+        public static void breathe ()
+        {
+            Console.WriteLine("Animal is now breathing");
+        }
+    }
+        //New CLASSES (Species) here:////////////////////
+
+        // The species for a Great White Shark
+    public class CarcharodonCarcharias : Animal
+    {
+        // Define simple properties for a Great White Shark//
+        public string ScaleSize { get; set; }
+        public string TeethNumber { get; set; }
+        public double SwimSpeed { get; set; }
+        public double FinNumber { get; set; }
     }
 
-    public static void eat ()
+    // The species for a Hellbender Salamander//
+    public class CryptobranchusAlleganiensis : Animal
     {
-        Console.WriteLine("Animal is now eating");
+        // Define simple properties for a Hellbender Salamander//
+        public string RespirationType { get; set; }
+        public string Diet { get; set; }
+        public string NativeEnvironment { get; set; }
+        public double MaximumLength { get; set; }
     }
-    public static void move ()
+    // The species for a Red-headed Woodpecker
+    public class MelanerpesErythrocephalus : Animal
     {
-        Console.WriteLine("Animal is now moving");
+        // Define simple properties for a Red-headed Woodpecker//
+        public string HeadColor { get; set; }
+        public string WingPatchColor { get; set; }
+        public double WingSpan { get; set; }
+        public string FoodStorageLocation { get; set; }
     }
-    public static void breathe ()
+    // The species for a Caribou
+    public class RangiferTarandus : Animal
     {
-        Console.WriteLine("Animal is now breathing");
+        // Define simple properties for a Caribou//
+        public string CoatType { get; set; }
+        public string FurTexture { get; set; }
+        public double RunSpeed { get; set; }
+        public double AntlerSize { get; set; }
     }
-    //New CLASSES (Species) here:////////////////////
-
-    // The species for a Great White Shark
-class CarcharodonCarcharias : Animal
-{
-    // Define simple properties for a Great White Shark
-
-    public bool scales { get; set; }
-    public bool gills { get; set; }
-    public  int swimSpeed { get; set; }
-    public bool cartilageSkeleton { get; set; }
-
-
-}
-
-
-}
+    ////////////////////////////////////////////////////////
 }
