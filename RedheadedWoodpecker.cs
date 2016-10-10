@@ -3,7 +3,7 @@ using System;
 namespace Zoolandia.Animals
 
 {
-public class MelanerpesErythrocephalus : Animal
+public class Woodpecker : Animal
     {
         // Define simple properties for a Red-headed Woodpecker//
         public string HeadColor { get; set; }

@@ -2,7 +2,7 @@ using System;
 
 namespace Zoolandia.Animals
 {
-public class CryptobranchusAlleganiensis : Animal
+public class Salamander : Animal
     {
         // Define simple properties for a Hellbender Salamander//
         public string RespirationType { get; set; }

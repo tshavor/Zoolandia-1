@@ -2,7 +2,7 @@ using System;
 
 namespace Zoolandia.Animals
 {
-public class CarcharodonCarcharias : Animal
+public class Shark : Animal
     {
         // Define simple properties for a Great White Shark//
         public string ScaleSize { get; set; }
