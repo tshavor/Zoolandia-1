@@ -1,7 +1,7 @@
 using System;
 
 namespace Zoolandia.Animals
-
+{
 public class CryptobranchusAlleganiensis : Animal
     {
         // Define simple properties for a Hellbender Salamander//
@@ -10,3 +10,6 @@ public class CryptobranchusAlleganiensis : Animal
         public string NativeEnvironment { get; set; }
         public double MaximumLength { get; set; }
     }
+
+}
+

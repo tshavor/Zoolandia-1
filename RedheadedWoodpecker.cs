@@ -2,6 +2,7 @@ using System;
 
 namespace Zoolandia.Animals
 
+{
 public class MelanerpesErythrocephalus : Animal
     {
         // Define simple properties for a Red-headed Woodpecker//
@@ -10,3 +11,5 @@ public class MelanerpesErythrocephalus : Animal
         public double WingSpan { get; set; }
         public string FoodStorageLocation { get; set; }
     }
+
+}

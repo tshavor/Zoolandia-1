@@ -1,8 +1,8 @@
 using System;
 
 namespace Zoolandia.Animals
-
-public class RangiferTarandus : Animal
+{
+    public class RangiferTarandus : Animal
     {
         // Define simple properties for a Caribou//
         public string CoatType { get; set; }
@@ -10,3 +10,6 @@ public class RangiferTarandus : Animal
         public double RunSpeed { get; set; }
         public double AntlerSize { get; set; }
     }
+}
+
+    

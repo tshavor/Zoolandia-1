@@ -7,7 +7,7 @@ namespace Zoolandia
     {
         public static void Main(string[] args)
         {
-            Animal RedheadedWoodpecker= new MelanerpesErythrocephalus
+            MelanerpesErythrocephalus RedheadedWoodpecker= new MelanerpesErythrocephalus
             {
             Name= "Red-headed Woodpecker",
             Color= "black",
@@ -15,16 +15,14 @@ namespace Zoolandia
             FoodStorageLocation= "railroad ties"
             };
 
-            Console.WriteLine($"Hello World" + RedheadedWoodpecker.Name);
-            // Console.WriteLine($"I have a Squirrel named {squirrel.name} who makes a 
-// noise that sounds like {squirrel.signatureNoise}. I'd rate its cuteness 
-// at {squirrel.cutenessFactor}.");
+            Console.WriteLine(RedheadedWoodpecker.WingSpan);
+            
+// Example
+Console.WriteLine($"I have a Woodpecker named  {RedheadedWoodpecker.Name}");
+Console.WriteLine($"whose color is {RedheadedWoodpecker.Color},");
+Console.WriteLine($"who has a Wingspan of  {RedheadedWoodpecker.WingSpan},");
+Console.WriteLine($"and stores its food in {RedheadedWoodpecker.FoodStorageLocation}.");
 
         }
     }
 }
-
-// Example
-// Console.WriteLine($"I have a Squirrel named {squirrel.name} who makes a 
-// noise that sounds like {squirrel.signatureNoise}. I'd rate its cuteness 
-// at {squirrel.cutenessFactor}.");
