@@ -1,4 +1,5 @@
 ﻿using System;
+using Zoolandia.Animals;
 
 namespace Zoolandia
 {
@@ -14,10 +15,16 @@ namespace Zoolandia
             FoodStorageLocation= "railroad ties"
             };
 
-            Console.WriteLine("Hello World" + Name);
+            Console.WriteLine($"Hello World" + RedheadedWoodpecker.Name);
+            // Console.WriteLine($"I have a Squirrel named {squirrel.name} who makes a 
+// noise that sounds like {squirrel.signatureNoise}. I'd rate its cuteness 
+// at {squirrel.cutenessFactor}.");
 
-           // Console.WriteLine("I have a Squirrel named Nutsy who makes a noise that sounds like {0}. I'd rate  his cuteness as a {1}.", nutsy.Noise, nutsy.CutenessLevel);
-            
         }
     }
 }
+
+// Example
+// Console.WriteLine($"I have a Squirrel named {squirrel.name} who makes a 
+// noise that sounds like {squirrel.signatureNoise}. I'd rate its cuteness 
+// at {squirrel.cutenessFactor}.");
