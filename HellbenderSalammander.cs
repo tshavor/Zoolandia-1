@@ -17,7 +17,14 @@ public class Salamander : Animal
         this.Name = "Sal";
         this.SpeciesName= "Some really cool Latin name here";
         this.ConservationStatus= "Endangered";
-    
+        }
+        //this is an OVERLOADING Function that uses the same format as the original Caribou method but allows for the 
+        //use of a string NAME as an argument.//
+        public Salamander (string Name)
+        {
+        this.Name = Name;
+        this.SpeciesName= "Some really cool Latin name here";
+        this.ConservationStatus= "Endangered";
         }
 
 

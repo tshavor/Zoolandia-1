@@ -16,8 +16,16 @@ public class Woodpecker : Animal
         this.Name = "Birdey";
         this.SpeciesName= "Some really cool Latin name here";
         this.ConservationStatus= "Plentiful";
-    
         }
+        //this is an OVERLOADING Function that uses the same format as the original Caribou method but allows for the 
+        //use of a string NAME as an argument.//
+        public Woodpecker (string Name)
+        {
+        this.Name = Name;
+        this.SpeciesName= "Some really cool Latin name here";
+        this.ConservationStatus= "Plentiful";
+        }
+
     }
 
 }

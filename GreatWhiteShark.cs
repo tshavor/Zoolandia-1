@@ -26,8 +26,16 @@ public class Shark : Animal
         this.Name = "Sharkie";
         this.SpeciesName= "Carcharodon carcharias";
         this.ConservationStatus= "Vulnerable";
-    
         }
+        //this is an OVERLOADING Function that uses the same format as the original Caribou method but allows for the 
+        //use of a string NAME as an argument.//
+        public Shark (string Name)
+        {
+        this.Name = Name;
+        this.SpeciesName= "Carcharodon carcharias";
+        this.ConservationStatus= "Vulnerable";
+        }
+
     }
 
 
