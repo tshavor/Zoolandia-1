@@ -10,6 +10,14 @@ public class Woodpecker : Animal
         public string WingPatchColor { get; set; }
         public double WingSpan { get; set; }
         public string FoodStorageLocation { get; set; }
+
+        public Woodpecker ()
+        {
+        this.Name = "Birdey";
+        this.SpeciesName= "Some really cool Latin name here";
+        this.ConservationStatus= "Plentiful";
+    
+        }
     }
 
 }

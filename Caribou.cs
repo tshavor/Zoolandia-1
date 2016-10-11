@@ -9,6 +9,16 @@ namespace Zoolandia.Animals
         public string FurTexture { get; set; }
         public double RunSpeed { get; set; }
         public double AntlerSize { get; set; }
+
+        //this is a CONSTRUCTOR FUNCTION that makes a new instance of the class SHARK.
+        //they always have the same names as their original class.
+        public Caribou ()
+        {
+        this.Name = "Dopey";
+        this.SpeciesName= "Some really cool Latin name here";
+        this.ConservationStatus= "Plentiful";
+    
+        }
     }
 }
 

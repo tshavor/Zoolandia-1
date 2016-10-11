@@ -7,36 +7,45 @@ namespace Zoolandia
     {
         public static void Main(string[] args)
         {
-            Woodpecker RedheadedWoodpecker= new Woodpecker
-            {
-            Name= "Red-headed Woodpecker",
-            Color= "black",
-            WingSpan= 27,
-            FoodStorageLocation= "railroad ties"
-            };
-            
-            Shark GreatWhiteShark= new Shark
-            {
-            Name= "Great White Shark",
-            Color= "Grey",
-            ScaleSize= "large",
-            SwimSpeed= 28
-            };
-// Example 1:
-Console.WriteLine($"I have a Woodpecker named  {RedheadedWoodpecker.Name}");
-Console.WriteLine($"whose color is {RedheadedWoodpecker.Color},");
-Console.WriteLine($"who has a Wingspan of  {RedheadedWoodpecker.WingSpan},");
-Console.WriteLine($"and stores its food in {RedheadedWoodpecker.FoodStorageLocation}.");
-      
-// Example 2:
-Console.WriteLine($"I have a Shark named  {GreatWhiteShark.Name}");
-Console.WriteLine($"whose color is {GreatWhiteShark.Color},");
-Console.WriteLine($"who has a ScaleSize of  {GreatWhiteShark.ScaleSize},");
-Console.WriteLine($"and swims{GreatWhiteShark.SwimSpeed} miles/hour.");
-        
-        
-        }
+           //how do I call methods on my shark?
 
+        //  example 1:
+        //  Animal animal= new Animal();
+        //     animal.sleep();
+
+        // Example 2:
+        // Shark shark= new Shark();
+        // shark.sleep();
+
+        // Example 3:
+        Animal shark = new Shark();
+        shark.sleep();
+
+        //  
+          Shark GreatWhiteShark  = new Shark();
+            // Console.WriteLine(GreatWhiteShark.SpeciesName);  
+            // Console.WriteLine($"My pet's name is" + " " + GreatWhiteShark.Name + ".");
+            // Console.WriteLine($"His formal name is" +  " " + GreatWhiteShark.SpeciesName);
+            // Console.WriteLine($"and his conservation status is" + " " + GreatWhiteShark.ConservationStatus);
+
+          Salamander HellbenderSalamander = new Salamander();
+            // Console.WriteLine(GreatWhiteShark.SpeciesName);  
+            // Console.WriteLine($"My pet's name is" + " " + HellbenderSalamander.Name + ".");
+            // Console.WriteLine($"His formal name is" +  " " + HellbenderSalamander.SpeciesName);
+            // Console.WriteLine($"and his conservation status is" + " " + HellbenderSalamander.ConservationStatus);
+
+          Caribou Caribou = new Caribou();
+            // Console.WriteLine(Caribou.SpeciesName);  
+            // Console.WriteLine($"My pet's name is" + " " + Caribou.Name + ".");
+            // Console.WriteLine($"His formal name is" +  " " + Caribou.SpeciesName);
+            // Console.WriteLine($"and his conservation status is" + " " + Caribou.ConservationStatus);
+
+          Woodpecker RedHeadedWoodpecker = new Woodpecker();
+            // Console.WriteLine(Caribou.SpeciesName);  
+            // Console.WriteLine($"My pet's name is" + " " + RedHeadedWoodpecker.Name + ".");
+            // Console.WriteLine($"His formal name is" +  " " + RedHeadedWoodpecker.SpeciesName);
+            // Console.WriteLine($"and his conservation status is" + " " + RedHeadedWoodpecker.ConservationStatus);
+        }
     }
 }
 

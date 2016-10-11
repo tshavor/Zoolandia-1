@@ -9,6 +9,27 @@ public class Shark : Animal
         public string TeethNumber { get; set; }
         public double SwimSpeed { get; set; }
         public double FinNumber { get; set; }
+
+
+
+//create an override for the method "sleep" that I made "virtual" in Animals.cs//
+        public override void sleep ()
+        {
+//this part calls the sleep method on the base Animal, and then adds the 2nd console.Wrteline statement after it//
+            base.sleep();
+            Console.WriteLine("Animal is now sleeping, and working on it's tan!");
+        }
+//this is a CONSTRUCTOR FUNCTION that makes a new instance of the class SHARK.
+//they always have the same names as their original class.
+        public Shark ()
+        {
+        this.Name = "Sharkie";
+        this.SpeciesName= "Carcharodon carcharias";
+        this.ConservationStatus= "Vulnerable";
+    
+        }
     }
+
+
 
 }
