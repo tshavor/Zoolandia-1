@@ -12,7 +12,7 @@ public class Romerolagus : Animal
         public string Habitat { get; set; }
 
 }
-    public class VolcanoRabbit : Romerolagus
+    public class Rabbit : Romerolagus
     {
         // Define simple properties for a VolcanoRabbit//
         public string CommonName = "Volcano Rabbit";
@@ -23,20 +23,20 @@ public class Romerolagus : Animal
 
         //this is a CONSTRUCTOR FUNCTION that makes a new instance of the class VolcanoRabbit.
         //they always have the same names as their original class.
-        public VolcanoRabbit ()
-        {
-        this.Name = "Furry";
-        this.ConservationStatus= "Endangered";
+        // public Rabbit ()
+        // {
+        // this.Name = "Furry";
+        // this.ConservationStatus= "Endangered";
     
-        }
+        // }
 
         //this is an OVERLOADING Function that uses the same format as the original VolcanoRabbit method but allows for the 
         //use of a string NAME as an argument.//
-         public VolcanoRabbit (string Name)
-        {
-        this.Name = Name;
-        this.ConservationStatus= "Endangered";
+        //  public Rabbit (string Name)
+        // {
+        // this.Name = Name;
+        // this.ConservationStatus= "Endangered";
     
-        }
+        // }
     }
 }

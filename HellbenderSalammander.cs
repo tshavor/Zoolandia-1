@@ -22,18 +22,18 @@ public class Salamander : Cryptobranchus
         public double MaximumLength { get; set; }
 
 //this is a CONSTRUCTOR FUNCTION that makes a new instance of the class SHARK.
-//they always have the same names as their original class.
+//they always have the same names as their original class. (Done BEFORE I added Genus above)
         public Salamander ()
         {
-        this.Name = "Sal";
-        this.ConservationStatus= "Near Threatened";
+        this.name = "Sal";
+        this.conservationStatus= "Near Threatened";
         }
         //this is an OVERLOADING Function that uses the same format as the original Caribou method but allows for the 
         //use of a string NAME as an argument.//
         public Salamander (string Name)
         {
-        this.Name = Name;
-        this.ConservationStatus= "Near Threatened";
+        this.name = Name;
+        this.conservationStatus= "Near Threatened";
         }
 
 

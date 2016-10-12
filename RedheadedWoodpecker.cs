@@ -23,15 +23,15 @@ public class Woodpecker : Melanerpes
 
         public Woodpecker ()
         {
-        this.Name = "Pecker";
-        this.ConservationStatus= "Near Threatened";
+        this.name = "Pecker";
+        this.conservationStatus= "Near Threatened";
         }
         //this is an OVERLOADING Function that uses the same format as the original Caribou method but allows for the 
         //use of a string NAME as an argument.//
         public Woodpecker (string Name)
         {
-        this.Name = Name;
-        this.ConservationStatus= "Near Threatened";
+        this.name = Name;
+        this.conservationStatus= "Near Threatened";
         }
 
     }

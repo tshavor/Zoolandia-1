@@ -22,17 +22,17 @@ public class Macropus : Animal
         
         //this is a CONSTRUCTOR FUNCTION that makes a new instance of the class RedKangaroo.
         //they always have the same names as their original class.
-        public RedKangaroo ()
-        {
-        this.Name = "Dopey";
-        this.ConservationStatus= "Plentiful";
-        }
+        // public RedKangaroo ()
+        // {
+        // this.Name = "Dopey";
+        // this.ConservationStatus= "Plentiful";
+        // }
         //this is an OVERLOADING Function that uses the same format as the original Caribou method but allows for the 
         //use of a string NAME as an argument.//
-         public RedKangaroo (string Name)
-        {
-        this.Name = Name;
-        this.ConservationStatus= "Plentiful";
-        }
+        //  public RedKangaroo (string Name)
+        // {
+        // this.Name = Name;
+        // this.ConservationStatus= "Plentiful";
+        // }
     }
 }

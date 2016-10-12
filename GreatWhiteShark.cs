@@ -33,18 +33,16 @@ public class Shark : Carcharodon
 //this is a CONSTRUCTOR FUNCTION that makes a new instance of the class SHARK.
 //they always have the same names as their original class.
         public Shark ()
-        {
-        this.Name = "Sharkie";
-        this.SpeciesName= "Carcharodon carcharias";
-        this.ConservationStatus= "Vulnerable";
+         {
+        this.name = "Sharkie";
+        this.conservationStatus= "Vulnerable";
         }
-        //this is an OVERLOADING Function that uses the same format as the original Caribou method but allows for the 
-        //use of a string NAME as an argument.//
+        // this is an OVERLOADING Function that uses the same format as the original Caribou method but allows for the 
+        // use of a string NAME as an argument.//
         public Shark (string Name)
         {
-        this.Name = Name;
-        this.SpeciesName= "Carcharodon carcharias";
-        this.ConservationStatus= "Vulnerable";
+        this.name = Name;
+        this.conservationStatus= "Vulnerable";
         }
 
     }

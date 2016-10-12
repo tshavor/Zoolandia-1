@@ -5,6 +5,8 @@ namespace Zoolandia.Animals
     // Genus class, inherits from animal class
     public class Rangifer : Animal 
     {
+        
+    
         //add properties and methods
             public string EarShape { get; set; }
             public string HoofType { get; set; }
@@ -25,15 +27,15 @@ namespace Zoolandia.Animals
         //they always have the same names as their original class.
         public Caribou ()
         {
-        this.Name = "Dopey";
-        this.ConservationStatus= "Plentiful";
+        this.name = "Dopey";
+        this.conservationStatus= "Plentiful";
         }
         //this is an OVERLOADING Function that uses the same format as the original Caribou method but allows for the 
         //use of a string NAME as an argument.//
          public Caribou (string Name)
         {
-        this.Name = Name;
-        this.ConservationStatus= "Plentiful";
+        this.name = Name;
+        this.conservationStatus= "Plentiful";
         }
     }
 }
