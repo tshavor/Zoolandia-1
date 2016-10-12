@@ -88,10 +88,18 @@ namespace Zoolandia
           //  Console.WriteLine(VolcanoRabbit.genus.commonName);
           //  Console.WriteLine(VolcanoRabbit.genus.scientificName);
            
+          //creating a list of integers to use for "distance", which is set equal to "swimDistance".  
+          // Creating a variable "someVariable" to read values from after loop runs... 
+           int someVariable= 0;
            List<int>distance= new List<int>();
+          {
            distance.Add(42);
            distance.Add(30);
            distance.Add(41);
+           distance.Add(54);
+           distance.Add(39);
+          } 
+//////////////////////////////////////////////////////////////
 
            Shark GreatWhiteShark2 = new Shark()
            {
@@ -107,6 +115,20 @@ namespace Zoolandia
 
            };
             Console.WriteLine(GreatWhiteShark2.ScaleSize);
+            Console.WriteLine(GreatWhiteShark2.progenyType);
+
+            //here is a loop that accesses the count of values within the list "distance"//
+            for (int i = 0; i < distance.Count; i++)
+            //to access all items in list...
+            // Console.WriteLine(distance[i]);
+            //to access index 0 from list..//
+            someVariable= distance[0];
+            // Console.WriteLine(someVariable);
+            //to access the total numbers of list members...//
+            Console.Write("Total elements: {0}", distance.Count);
+
+
+
         }
     }
 }
