@@ -9,7 +9,6 @@ namespace Zoolandia.Animals
         public double Height { get; set; }
         public double Weight { get; set; }
         public string Color { get; set; }
-        public string SpeciesName { get; set; }
         public string ConservationStatus { get; set; }
         
 

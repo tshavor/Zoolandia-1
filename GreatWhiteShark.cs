@@ -2,9 +2,20 @@ using System;
 
 namespace Zoolandia.Animals
 {
-public class Shark : Animal
+    public class Carcharodon : Animal 
+    {
+        //add properties and methods
+            public string FinShape { get; set; }
+            public string HeadShape { get; set; }
+            public double Lifespan { get; set; }
+            public string Habitat { get; set; }
+
+    }
+public class Shark : Carcharodon
     {
         // Define simple properties for a Great White Shark//
+        public string CommonName = "Great White Shark";
+        public string ScientificName = "Carcharodon carcharias";
         public string ScaleSize { get; set; }
         public string TeethNumber { get; set; }
         public double SwimSpeed { get; set; }
