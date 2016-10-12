@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace Zoolandia.Animals
 {
@@ -11,7 +12,7 @@ namespace Zoolandia.Animals
             public string Habitat { get; set; }
 
     }
-public class Salamander : Cryptobranchus
+public class Salamander : Cryptobranchus, IAquatic
     {
         // Define simple properties for a Hellbender Salamander//
         public string CommonName = "Hellbender Salamander";
@@ -20,6 +21,12 @@ public class Salamander : Cryptobranchus
         public string Diet { get; set; }
         public string NativeEnvironment { get; set; }
         public double MaximumLength { get; set; }
+        //adding properties from IAquatic//
+        public List<int> swimDistance {get; set;}
+        public string progenyType {get; set;}
+        public int avglifespan {get; set;}
+        public bool nativeSpecies {get; set;}
+        /////////////////////////////////////////////////////
 
 //this is a CONSTRUCTOR FUNCTION that makes a new instance of the class SHARK.
 //they always have the same names as their original class. (Done BEFORE I added Genus above)

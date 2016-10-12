@@ -1,5 +1,7 @@
 ﻿using System;
 using Zoolandia.Animals;
+using System.Collections.Generic;
+
 
 namespace Zoolandia
 {
@@ -75,7 +77,8 @@ namespace Zoolandia
            Caribou Caribou3 = new Caribou();
            Caribou3.eat = new Eat();
            Caribou3.eat.diet= "lichen";
-          //  Console.WriteLine(Caribou3.eat.diet);
+           Caribou3.eat.modeOfEating= "chew";
+          //  Console.WriteLine("My animal likes to" + Caribou3.eat.modeOfEating);
 
            //An example of inserting values into the Genus class:
            Rabbit VolcanoRabbit = new Rabbit();
@@ -85,8 +88,25 @@ namespace Zoolandia
           //  Console.WriteLine(VolcanoRabbit.genus.commonName);
           //  Console.WriteLine(VolcanoRabbit.genus.scientificName);
            
+           List<int>distance= new List<int>();
+           distance.Add(42);
+           distance.Add(30);
+           distance.Add(41);
 
+           Shark GreatWhiteShark2 = new Shark()
+           {
+            ScaleSize = "large",
+            TeethStyle = "Serrated",
+            SwimSpeed = 30,
+            FinNumber = 4,
+        //adding properties from IAquatic//
+            swimDistance = distance,
+            progenyType = "motile",
+            avglifespan = 25,
+            nativeSpecies= true,
 
+           };
+            Console.WriteLine(GreatWhiteShark2.ScaleSize);
         }
     }
 }

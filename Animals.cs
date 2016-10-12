@@ -27,7 +27,7 @@ namespace Zoolandia.Animals
         }
         // public static void eat ()
         // {
-            Console.WriteLine("Animal is now eating");
+        //     Console.WriteLine("Animal is now eating");
         // }
         public static void move ()
         {

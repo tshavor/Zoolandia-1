@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace Zoolandia.Animals
 {
@@ -11,16 +12,21 @@ namespace Zoolandia.Animals
             public string Habitat { get; set; }
 
     }
-public class Shark : Carcharodon
+public class Shark : Carcharodon, IAquatic
     {
         // Define simple properties for a Great White Shark//
         public string CommonName = "Great White Shark";
         public string ScientificName = "Carcharodon carcharias";
         public string ScaleSize { get; set; }
-        public string TeethNumber { get; set; }
+        public string TeethStyle { get; set; }
         public double SwimSpeed { get; set; }
         public double FinNumber { get; set; }
-
+        //adding properties from IAquatic//
+        public List<int> swimDistance {get; set;}
+        public string progenyType {get; set;}
+        public int avglifespan {get; set;}
+        public bool nativeSpecies {get; set;}
+////////////////////////////////////////////////////////////////////////
 
 
 //create an override for the method "sleep" that I made "virtual" in Animals.cs//

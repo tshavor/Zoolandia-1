@@ -5,8 +5,6 @@ namespace Zoolandia.Animals
     // Genus class, inherits from animal class
     public class Rangifer : Animal 
     {
-        
-    
         //add properties and methods
             public string EarShape { get; set; }
             public string HoofType { get; set; }
