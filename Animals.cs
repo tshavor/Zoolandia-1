@@ -18,7 +18,6 @@ namespace Zoolandia.Animals
         public double weight { get; set; }
         public string color { get; set; }
         public string conservationStatus { get; set; }
-        
 
     //Some METHODS on Animal follows://
         public virtual void sleep ()

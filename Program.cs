@@ -1,6 +1,7 @@
 ﻿using System;
 using Zoolandia.Animals;
 using System.Collections.Generic;
+using Zoolandia.Habitats;
 
 
 namespace Zoolandia
@@ -20,11 +21,11 @@ namespace Zoolandia
         // shark.sleep();
 
         // Example 3:
-        Animal shark = new Shark();
+        Shark shark = new Shark();
         shark.sleep();
 
         //  
-          Shark GreatWhiteShark  = new Shark();
+          // Shark GreatWhiteShark  = new Shark();
             // Console.WriteLine(GreatWhiteShark.SpeciesName);  
             // Console.WriteLine($"My pet's name is" + " " + GreatWhiteShark.Name + ".");
             // Console.WriteLine($"His formal name is" +  " " + GreatWhiteShark.SpeciesName);
@@ -36,7 +37,7 @@ namespace Zoolandia
           // Console.WriteLine(GreatWhiteShark1.name);
 
 
-          Salamander HellbenderSalamander = new Salamander();
+          // Salamander HellbenderSalamander = new Salamander();
             // Console.WriteLine(GreatWhiteShark.SpeciesName);  
             // Console.WriteLine($"My pet's name is" + " " + HellbenderSalamander.Name + ".");
             // Console.WriteLine($"His formal name is" +  " " + HellbenderSalamander.SpeciesName);
@@ -45,7 +46,7 @@ namespace Zoolandia
             //this calls the OVERLOADED CONSTRUCTOR on Caribou.cs and replaces the name with RAMBO//
           //you have to use a different variable name, so I renamed it Caribou1//
         Salamander HellbenderSalamander1 = new Salamander("BADASS");
-        //  Console.WriteLine(HellbenderSalamander1.name);
+         Console.WriteLine(HellbenderSalamander1.name);
 
 
           Caribou Caribou = new Caribou();
@@ -88,7 +89,7 @@ namespace Zoolandia
           //  Console.WriteLine(VolcanoRabbit.genus.commonName);
           //  Console.WriteLine(VolcanoRabbit.genus.scientificName);
            
-          //creating a list of integers to use for "distance", which is set equal to "swimDistance".  
+          //ZOOLANDIA 6: creating a list of integers to use for "distance", which is set equal to "swimDistance".  
           // Creating a variable "someVariable" to read values from after loop runs... 
            int someVariable= 0;
            List<int>distance= new List<int>();
@@ -103,6 +104,7 @@ namespace Zoolandia
 
            Shark GreatWhiteShark2 = new Shark()
            {
+            name = "ROCKY",
             ScaleSize = "large",
             TeethStyle = "Serrated",
             SwimSpeed = 30,
@@ -114,8 +116,8 @@ namespace Zoolandia
             nativeSpecies= true,
 
            };
-            Console.WriteLine(GreatWhiteShark2.ScaleSize);
-            Console.WriteLine(GreatWhiteShark2.progenyType);
+            // Console.WriteLine(GreatWhiteShark2.ScaleSize);
+            // Console.WriteLine(GreatWhiteShark2.progenyType);
 
             //here is a loop that accesses the count of values within the list "distance"//
             for (int i = 0; i < distance.Count; i++)
@@ -125,9 +127,34 @@ namespace Zoolandia
             someVariable= distance[0];
             // Console.WriteLine(someVariable);
             //to access the total numbers of list members...//
-            Console.Write("Total elements: {0}", distance.Count);
+            // Console.WriteLine("Total elements: {0}", distance.Count);
 
+///ZOOLANDIA 7: Outputting lists of animals by habitat type:
+      //  public List<Animal> inhabitants = new List<Animal>();
+       
+       Water Aquarium = new Water();
 
+      Shark GreatWhiteShark  = new Shark();
+      Salamander HellbenderSalamander = new Salamander();
+
+      GreatWhiteShark.name= "SHARKY";
+      HellbenderSalamander.name= "SAL";
+       
+        Aquarium.inhabitants.Add(GreatWhiteShark);
+        Aquarium.inhabitants.Add(HellbenderSalamander);
+        //computers cant just display an integer of "2"; it must be converted to a string first.  thats what the $ does (string interpolation)
+        // Console.Write($"{Aquarium.inhabitants.Count}");
+        
+//need to loop over itmes within Aquarium in order to display them://
+        // for (int i = 0; i < Aquarium.inhabitants.Count; i++)
+        // {
+        // Console.WriteLine(Aquarium.inhabitants[i].name);
+        // }
+
+        foreach (var inhabitants in Aquarium.inhabitants)
+        {
+        Console.WriteLine(inhabitants.name);
+        }
 
         }
     }

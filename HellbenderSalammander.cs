@@ -32,7 +32,7 @@ public class Salamander : Cryptobranchus, IAquatic
 //they always have the same names as their original class. (Done BEFORE I added Genus above)
         public Salamander ()
         {
-        this.name = "Sal";
+        // this.name = "Sal";
         this.conservationStatus= "Near Threatened";
         }
         //this is an OVERLOADING Function that uses the same format as the original Caribou method but allows for the 

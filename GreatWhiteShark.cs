@@ -34,13 +34,13 @@ public class Shark : Carcharodon, IAquatic
         {
 //this part calls the sleep method on the base Animal, and then adds the 2nd console.Wrteline statement after it//
             base.sleep();
-            Console.WriteLine("Animal is now sleeping, and working on it's tan!");
+            // Console.WriteLine("Animal is now sleeping, and working on it's tan!");
         }
 //this is a CONSTRUCTOR FUNCTION that makes a new instance of the class SHARK.
 //they always have the same names as their original class.
         public Shark ()
          {
-        this.name = "Sharkie";
+        // this.name = "Sharkie";
         this.conservationStatus= "Vulnerable";
         }
         // this is an OVERLOADING Function that uses the same format as the original Caribou method but allows for the 
